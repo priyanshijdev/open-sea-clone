@@ -1,0 +1,37 @@
+.nft-grid-container {
+  display: flex;
+  align-items: center;
+}
+
+.nft-grid {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.nft-grid button {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.nft-grid button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.nft-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+  
+  @media (max-width: 576px) {
+    .nft-grid {
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+    }
+  }
+
