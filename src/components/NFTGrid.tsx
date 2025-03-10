@@ -3,8 +3,12 @@ import NFTCard from "./NFTCard";
 import React, { useState } from "react";
 
 type Collection = {
-  id: string;
-  // Add other properties if available
+  id: number; 
+  name: string;
+  creator: string;
+  floorPrice: string;
+  image: string;
+  verified: boolean;
 };
 
 type NFTGridProps = {
