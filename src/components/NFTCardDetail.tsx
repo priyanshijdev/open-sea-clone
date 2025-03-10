@@ -6,14 +6,14 @@ const App = () => {
   const [selectedCollection, setSelectedCollection] = useState(null)
 
   // Function to handle clicking on a collection card
-  const handleCollectionClick = (collection) => {
+  const handleCollectionClick = (collection:any) => {
     setSelectedCollection(collection)
   }
 
   // Function to close the detail view
-  const handleCloseDetail = () => {
-    setSelectedCollection(null)
-  }
+  // const handleCloseDetail = () => {
+  //   setSelectedCollection(null)
+  // }
 
   return (
     <div className="app">
@@ -47,7 +47,8 @@ const App = () => {
           </div>
         </div>
       ) : (
-        <NFTCollectionDetail collection={selectedCollection} onClose={handleCloseDetail} />
+        // <NFTCollectionDetail collection={selectedCollection} onClose={handleCloseDetail} />
+        null
       )}
     </div>
   )
