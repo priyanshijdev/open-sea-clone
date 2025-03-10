@@ -1,6 +1,7 @@
 # How To Run Application 
 
 1.For installing all dependencies
+
 npm i
 
 2. Use updated node version (recommened-18)
